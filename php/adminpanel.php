@@ -3,13 +3,15 @@
 
 session_start();
 
-if(!isset($_SESSION["username"]))
-{
- header("location:admin.php");
+if(!isset($_SESSION["username"])) { // Check if username session variable is set
+  header("location:admin.php");   // Redirect to admin.php if not set
+                    
 }
 
+// Code to display admin panel content would be here
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +21,13 @@ if(!isset($_SESSION["username"]))
     <title>Admin Panel</title>
 </head>
 <body>
+
+    
     <h1>Hello world</h1>
+    <?php
+    
+    echo $_SESSION["admin"]
+    ?>
     
 
     <a href="logout.php">Logout</a>

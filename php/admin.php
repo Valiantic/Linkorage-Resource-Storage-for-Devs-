@@ -15,22 +15,14 @@
 </head>
 <body>
 
+
+
+
 <?php
 
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "db_linkorage";
 
-
-session_start();
-
-$data = mysqli_connect($host, $user, $password, $db);
-if ($data === false) {
-    die("Connection error: " . mysqli_connect_error()); // Include the error message
-}
-
+include("connections.php");
 
 // CHECKS IF THE ACCOUNT IS REGISTERED TO THE DATABASE
 
@@ -42,6 +34,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $result = mysqli_query($data, $sql);
 
+    // $row=mysqli_fetch_array($result);
+
+    // if($row["usertype"]=="user")
+    // {
+    //     header("location:user.php");
+    // }
+    // elseif ($row["usertype"]=="admin") {
+    //     header("location:adminpanel.php");
+    // }
+    // else {
+    //     echo "incorrect credentials";
+    // }
     // Check if any results were found
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_array($result);
@@ -62,6 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     mysqli_free_result($result); // Free the result set memory
+
 }
 
 

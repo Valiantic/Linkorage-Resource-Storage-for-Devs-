@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION["username"])) { // Check if username session variable is set
+  header("location:admin.php");   // Redirect to admin.php if not set
+}
+
+// Code to display admin panel content would be here
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

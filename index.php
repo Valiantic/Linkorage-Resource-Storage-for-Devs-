@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    
+    
+
+
     <!-- typing animation -->
     <div class="typecontainer">
         <span class="text myText">Linkorage</span>

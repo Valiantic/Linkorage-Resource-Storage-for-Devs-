@@ -18,8 +18,6 @@ $password = "";
 $db = "db_linkorage";
 
 
-session_start();
-
 $data = mysqli_connect($host, $user, $password, $db);
 if ($data === false) {
     die("Connection error: " . mysqli_connect_error()); // Include the error message

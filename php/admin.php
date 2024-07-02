@@ -15,9 +15,10 @@
 </head>
 <body>
 
-<!-- ERROR VALIDATION -->
-<?php
 
+
+
+<?php
 
 $username = $password = "";
 $usernameErr = $passwordErr = "";
@@ -39,11 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 }
 
-?>
-
-
-<?php
-
+session_start();
 
 
 include("connections.php");
@@ -110,12 +107,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form class="inputing" action="" method="POST">
             <div class="inputname">
                 <label class="usern">Username</label>
-                <input type="text" name="username" placeholder="" required>
+                <input type="text" name="username" placeholder="">
                 <span class="error"><?php echo $usernameErr; ?></span> 
             </div>
             <div class="inputpass">
                 <label class="passer">Password</label>
-                <input type="password" name="password" placeholder="" required>
+                <input type="password" name="password" placeholder="">
                 <span class="error"><?php echo $passwordErr; ?></span> 
             </div>
         

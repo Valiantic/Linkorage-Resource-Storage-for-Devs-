@@ -10,53 +10,46 @@
 const arrayData = [
     {
         id: 1,
-        imageUrl: "./images/profiles/tristan.jpg",
-        Heading: "Tristan Mark Infante",
-        bgColor: "rgb(255, 246, 209)",
-        para: "Like a leaf in the wallow breeze, I have no clue where am I heading, but I know it will be a worthwhile one when I arrive at my destination"
+        imageUrl: "./images/profiles/aihelpers.jpg",
+        Heading: "A.I Helpers",
+        bgColor: "rgb(48, 196, 255)",
+        para: "Links for Various Artificial Intelligence Website to assist your Workloads!"
     },
     {
         id: 2,
-        imageUrl: "./images/profiles/steve.jpg",
-        Heading: "Steven Gabriel Madali",
-        bgColor: "rgb(255, 246, 209)",
-        para: "Light chases me, and stories unfold before my lens. Explore the world through my daily image gallery, where a new perspective comes into view every single day."
+        imageUrl: "./images/profiles/fronendtools.jpg",
+        Heading: "Front-End Tools",
+        bgColor: "rgb(48, 196, 255)",
+        para: "Components, Animations, Scrolls, Navbars and many more Devtools!"
     },
     {
         id: 3,
-        imageUrl: "./images/profiles/railey.jpg",
-        Heading: "Railey Canete",
-        bgColor: "rgb(255, 246, 209)",
-        para: "One bad chapter doesn't mean the story is over. Every book has its challenges, but the best ones keep turning the page. Stay positive, and keep moving forward."
+        imageUrl: "./images/profiles/boredgames.jpg",
+        Heading: "Bored Games",
+        bgColor: "rgb(48, 196, 255)",
+        para: "Nothing to do? Or something to buy time? play games now!"
     },
     {
         id: 4,
-        imageUrl: "./images/profiles/meinard.jpg",
-        Heading: "Meinard Languita",
-        bgColor: "rgb(255, 246, 209)",
-        para: "Everyone sees the world in a different way. Allow me to show you mine, captured through the unique lens of my camera. Get ready to experience the world anew through my eyes."
+        imageUrl: "./images/profiles/designing.jpg",
+        Heading: "Designs & Inspirations",
+        bgColor: "rgb(48, 196, 255)",
+        para: "Different Website Inspirations and Needs!"
     },
     {
         id: 5,
-        imageUrl: "./images/profiles/jommel.jpg",
-        Heading: "Jommel Labrador",
-        bgColor: "rgb(255, 246, 209)",
-        para: "Everywhere you go, take a picture of what catches your eye.  Capture the world through your own unique lens. What appeals to you is more important than what others think. "
+        imageUrl: "./images/profiles/learning.jpg",
+        Heading: "Upskill Coding",
+        bgColor: "rgb(48, 196, 255)",
+        para: "Resource link to enhance Problem solving and Learning through Coding!"
     },
     {
         id: 6,
-        imageUrl: "./images/profiles/rhenz.jpg",
-        Heading: "Rhenzomar Facundo",
-        bgColor: "rgb(255, 246, 209)",
-        para: "Just like a kid wondering around, eyes wide with wonder and eager to explore. The world is a playground, and everyday is a chance to uncover something magical."
-    },
-    {
-        id: 7,
-        imageUrl: "./images/profiles/lans.jpg",
-        Heading: "Lance Michele Gunda",
-        bgColor: "rgb(255, 246, 209)",
-        para: "Kung bibitaw ng mahinahon ako ba'y lulubayan ng ating mga kahapon na 'di na kayang ayusin ng lambing. -Arthur Nery"
-    },
+        imageUrl: "./images/profiles/visualization.jpg",
+        Heading: "Visualization Chart",
+        bgColor: "rgb(48, 196, 255)",
+        para: "Tools for Data structures visualization as well as Database diagrams!"
+    }
     
 ]
 
@@ -87,9 +80,6 @@ const functionCards = () => {
         }
         if (data.id === 6) {
             profileUrl = `./html/rhenz.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
-        }
-        if (data.id === 7) {
-            profileUrl = `./html/lans.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
         }
 
         cardContainer.innerHTML += `

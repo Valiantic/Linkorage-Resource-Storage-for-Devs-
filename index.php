@@ -3,33 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Everyday Elegance"</title>
+    <title>Linkorage</title>
 
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- typing animation -->
     <div class="typecontainer">
-        <span class="text myText">Everyday</span>
-        <span class="text headText">Elegance</span>
+        <span class="text myText">Linkorage</span>
     </div>
     <div class="subtitle">
-        <span class="subtitle">"A Day in the Life"</span>
+        <span class="subtitle">"Resource Storage for Devs by Steven Madali"</span>
     </div>
-
 
 
     <div class="container">
         
     </div>
 
-    <script src="/js/script.js"></script>
-    <script src="/js/type.js"></script>
+    <script src="./js/script.js"></script>
     
 </body>
 </html>

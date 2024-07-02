@@ -15,7 +15,31 @@
 </head>
 <body>
 
+<!-- ERROR VALIDATION -->
+<?php
 
+
+$username = $password = "";
+$usernameErr = $passwordErr = "";
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+  // Blank field detector
+  if(empty ($_POST["username"])){
+    $usernameErr = "Please input a username!";
+  } else {
+    $username = $_POST["username"];
+  }
+
+  if(empty ($_POST["password"])){
+    $passwordErr = "Please input a password!";
+  } else {
+    $password = $_POST["password"];
+  }
+
+}
+
+?>
 
 
 <?php
@@ -87,10 +111,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="inputname">
                 <label class="usern">Username</label>
                 <input type="text" name="username" placeholder="" required>
+                <span class="error"><?php echo $usernameErr; ?></span> 
             </div>
             <div class="inputpass">
                 <label class="passer">Password</label>
                 <input type="password" name="password" placeholder="" required>
+                <span class="error"><?php echo $passwordErr; ?></span> 
             </div>
         
                 

@@ -1,3 +1,5 @@
+ 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +15,61 @@
 </head>
 <body>
 
+<?php
+
+
+$host = "localhost";
+$user = "root";
+$password = "";
+$db = "db_linkorage";
+
+
+session_start();
+
+$data = mysqli_connect($host, $user, $password, $db);
+if ($data === false) {
+    die("Connection error: " . mysqli_connect_error()); // Include the error message
+}
+
+
+// CHECKS IF THE ACCOUNT IS REGISTERED TO THE DATABASE
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $sql = "SELECT * FROM tbl_linkadmin WHERE username='" . $username . "' AND password='" . $password . "' ";
+
+    $result = mysqli_query($data, $sql);
+
+    // Check if any results were found
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_array($result);
+
+        if ($row["usertype"] == "user") {
+            $_SESSION["username"]=$username;
+            header("location:user.php");
+
+        } else if ($row["usertype"] == "admin") {
+            $_SESSION["admin"]=$admin;
+            header("location:adminpanel.php");
+
+        } else {
+            echo "Invalid user type"; // Handle unexpected usertype values
+        }
+    } else {
+        // echo "Incorrect Credentials"; // Display error message if no matching records
+    }
+
+    mysqli_free_result($result); // Free the result set memory
+}
+
+
+
+?>
+
+
+
 <div class="typecontainer">
         <span class="text myText">Welcome back Steven!</span>
     </div>
@@ -21,14 +78,14 @@
     <div class="form-container">
         <p class="container-title">Sign-in</p>
 
-        <form class="inputing">
+        <form class="inputing" action="" method="POST">
             <div class="inputname">
                 <label class="usern">Username</label>
-                <input type="text" name="username" placeholder="">
+                <input type="text" name="username" placeholder="" required>
             </div>
             <div class="inputpass">
                 <label class="passer">Password</label>
-                <input type="password" name="password" placeholder="">
+                <input type="password" name="password" placeholder="" required>
             </div>
         
                 

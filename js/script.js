@@ -12,42 +12,42 @@ const arrayData = [
         id: 1,
         imageUrl: "./images/profiles/aihelpers.jpg",
         Heading: "A.I Helpers",
-        bgColor: "rgb(48, 196, 255)",
+        bgColor: "white",
         para: "Links for Various Artificial Intelligence Website to assist your Workloads!"
     },
     {
         id: 2,
         imageUrl: "./images/profiles/fronendtools.jpg",
         Heading: "Front-End Tools",
-        bgColor: "rgb(48, 196, 255)",
+        bgColor: "white",
         para: "Components, Animations, Scrolls, Navbars and many more Devtools!"
     },
     {
         id: 3,
         imageUrl: "./images/profiles/boredgames.jpg",
         Heading: "Bored Games",
-        bgColor: "rgb(48, 196, 255)",
+        bgColor: "white",
         para: "Nothing to do? Or something to buy time? play games now!"
     },
     {
         id: 4,
         imageUrl: "./images/profiles/designing.jpg",
         Heading: "Designs & Inspirations",
-        bgColor: "rgb(48, 196, 255)",
+        bgColor: "white",
         para: "Different Website Inspirations and Needs!"
     },
     {
         id: 5,
         imageUrl: "./images/profiles/learning.jpg",
         Heading: "Upskill Coding",
-        bgColor: "rgb(48, 196, 255)",
+        bgColor: "white",
         para: "Resource link to enhance Problem solving and Learning through Coding!"
     },
     {
         id: 6,
         imageUrl: "./images/profiles/visualization.jpg",
         Heading: "Visualization Chart",
-        bgColor: "rgb(48, 196, 255)",
+        bgColor: "white",
         para: "Tools for Data structures visualization as well as Database diagrams!"
     }
     
@@ -64,22 +64,22 @@ const functionCards = () => {
 
         // Check if the current data object has a specific target id (replace 2 with your desired target id)
         if (data.id === 1) {
-            profileUrl = `./html/tristan.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
+            profileUrl = `./html/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
           }
         if (data.id === 2) {
-          profileUrl = `./html/steve.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
+          profileUrl = `./html/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
         }
         if (data.id === 3) {
-            profileUrl = `./html/railey.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
+            profileUrl = `./html/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
         }
         if (data.id === 4) {
-            profileUrl = `./html/meinard.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
+            profileUrl = `./html/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
         }
         if (data.id === 5) {
-            profileUrl = `./html/jommel.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
+            profileUrl = `./html/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
         }
         if (data.id === 6) {
-            profileUrl = `./html/rhenz.html?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
+            profileUrl = `./html/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
         }
 
         cardContainer.innerHTML += `

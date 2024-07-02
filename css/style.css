@@ -51,17 +51,19 @@ body{
 .card h2{
     margin: 15px 5px;
     position: relative;
-    -webkit-text-stroke: 1px white;
+    color: rgb(48, 196, 255);
+    -webkit-text-stroke: 1px #252525;
 }
 
 .card h2::before{
     content: '';
-    background-color: white;
+    background-color: rgb(48, 196, 255);
     height: 3px;
     width: 100px;
     position: absolute;
     bottom: -4px;
     border-radius: 50%;
+    color: rgb(48, 196, 255);
 
 }
 

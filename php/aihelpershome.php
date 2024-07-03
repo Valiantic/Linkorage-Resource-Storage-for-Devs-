@@ -75,8 +75,8 @@
         </label>
         <label class="logo">Linkorage</label>
         <ul>
-            <li><a class="active" href="adminpanel.php">Home</a></li>
-            <li><a href="logout.php" >Logout</a></li>
+            <li><a class="active" href="../index.php">Home</a></li>
+            <!-- <li><a href="logout.php" >Logout</a></li> -->
             
         </ul>
     </nav>
@@ -85,80 +85,22 @@
             <!-- INSERT FORM -->
 
             <!-- ERROR VALIDATION -->
-  <?php
-
-
-$link = $detail = "";
-$linkErr = $detailErr = "";
-
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-
-  // Blank field detector
-  if(empty ($_POST["link"])){
-    $linkErr = "Please input a Link!";
-  } else {
-    $link = $_POST["link"];
-  }
-
-  if(empty ($_POST["detail"])){
-    $detailErr = "Please input a Detail!";
-  } else {
-    $detail = $_POST["detail"];
-  }
-
-}
-
-?>
-
-    <form class="inputing" method="POST" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        
-    <div class="min-h-screen bg-background flex flex-col items-center justify-center p-4">
-    <div class="max-w-md w-full bg-card shadow-lg rounded-lg p-6">
-        <h1 class="text-3xl text-primary text-center mb-6 font-bold"><img height="50px" width="70px"src="../images/logo.png">Linkorage</h1>
-        <!-- <h4 class="text-1xl text-primary text-center mb-6 font-bold">"Store links and information at ease"</h4>
-        <h4 class="text-1xl text-primary text-center mb-6 font-bold">By Steven Madali</h4> -->
-        <div class="flex flex-col space-y-4">
-
-            <input id="linkInput" type="text" name="link" value="<?php echo $link; ?>" placeholder="Enter Link" class="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring focus:ring-primary transition duration-300" /> 
-            <span class="error"><?php echo $linkErr; ?></span> 
-
-            <input id="descriptionInput" type="text" name="detail" value="<?php echo $detail; ?>" placeholder="Tell me about this Link" class="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring focus:ring-primary transition duration-300" /> 
-            <span class="error"><?php echo $detailErr; ?></span> 
-
-
-            <button id="saveButton" class="bg-primary text-primary-foreground px-4 py-3 rounded-lg hover:bg-primary/80 focus:outline-none focus:ring focus:ring-primary transition duration-300">Save Link</button>
-            <!-- <button id="sortButton" class="bg-secondary text-secondary-foreground px-4 py-3 rounded-lg hover:bg-secondary/80 focus:outline-none focus:ring focus:ring-secondary transition duration-300">Sort by Description</button> -->
-        </div>
-     
-    </div>
-</div>
-
-    </form>
+ 
     
 
-    <?php
+   <?php
 
 
 // database connector
 include("connections.php");
 
 
-if ($link && $detail) {
-  //  adding a user to the database 
-   $query = mysqli_query($connections, "INSERT INTO tbl_aihelpersrecord(link,detail) VALUES('$link','$detail')");
-
-  // indicator that a new account is inserted using js 
-  echo "<script language='javascript'>alert('New Link has been inserted!')</script>";
-  echo "<script>window.location.href='editaihelpers.php';</script>";
-  }
 
    // read the user 
    $view_query = mysqli_query($connections, "SELECT * FROM tbl_aihelpersrecord");
 
 
-   // envelope the users account in a form of a table 
-  
-   echo "<table class=displaytbl>"
+   echo "<table class=displaytbl>";
    echo "<tr>
           <td class=linktitle>Link</td>
           <td class=detailtitle>Detail</td>

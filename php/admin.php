@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "SELECT * FROM tbl_linkadmin WHERE username='" . $username . "' AND password='" . $password . "' ";
 
-    $result = mysqli_query($data, $sql);
+    $result = mysqli_query($connections, $sql);
 
     // $row=mysqli_fetch_array($result);
 

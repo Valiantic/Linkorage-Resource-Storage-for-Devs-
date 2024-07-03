@@ -263,3 +263,157 @@ section{
    background-size: cover;
    height: calc(100vh - 80px);
 }
+
+@media  screen and (max-width: 767px) {
+    .aihelpers{
+        background-color: white;
+        background-image: url(../images/profiles/aihelpers.jpg);
+        background-size: cover;
+        height: 20vw;
+        width: 25vw;
+        padding: 2%;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    .aihelpers a{
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 1px #252525;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.4rem;
+    }
+    .frontendtools{
+        background-color: white;
+        background-image: url(../images/profiles/fronendtools.jpg);
+        background-size: cover;
+        height: 20vw;
+        width: 25vw;
+        padding: 2%;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    .frontendtools a{
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 1px #252525;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      
+        font-size: 1rem;
+    }
+    .boredgames{
+        background-color: white;
+        background-image: url(../images/profiles/boredgames.jpg);
+        background-size: cover;
+        height: 20vw;
+        width: 25vw;
+        padding: 2%;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .boredgames a{
+        text-decoration: none;
+        color: #252525;
+        color: white;
+        -webkit-text-stroke: 1px #252525;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      
+        font-size: 1rem;
+    }
+    
+    .designinspirations{
+        background-color: white;
+        background-image: url(../images/profiles/designing.jpg);
+        background-size: cover;
+        height: 20vw;
+        width: 25vw;
+        padding: 2%;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       
+    }
+    .designinspirations a{
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 1px #252525;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+    }
+    .upskillcoding{
+        background-color: white;
+        background-image: url(../images/profiles/learning.jpg);
+        background-size: cover;
+        height: 20vw;
+        width: 25vw;
+        padding: 2%;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    .upskillcoding a{
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 1px #252525;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      
+        font-size: 1rem;
+    }
+    .visualizationchart{
+        background-color: white;
+        background-image: url(../images/profiles/visualization.jpg);
+        background-size: cover;
+        height: 20vw;
+        width: 25vw;
+        padding: 2%;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .visualizationchart a{
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 1px #252525;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      
+        font-size: 0.9rem;
+    }
+    
+    
+    
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 2%;
+        margin-top: 3%;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 5em;
+        margin-bottom: 5%;
+    }
+    
+
+}

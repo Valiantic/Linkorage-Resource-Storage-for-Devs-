@@ -264,6 +264,8 @@ section{
    height: calc(100vh - 80px);
 }
 
+
+
 @media  screen and (max-width: 767px) {
     .aihelpers{
         background-color: white;

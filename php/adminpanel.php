@@ -3,7 +3,7 @@
 
 // session_start();
 
-// if(!isset($_SESSION["username"])) { // Check if username session variable is set
+// if(!isset($_SESSION["Username"])) { // Check if username session variable is set
 //   header("location:admin.php");   // Redirect to admin.php if not set
                     
 // }
@@ -29,6 +29,16 @@
 </head>
 <body>
 
+    <?php
+    
+    // session_start();
+
+    // if(!isset($_SESSION["Username"])) { // Check if username session variable is set
+    // header("location:admin.php");   // Redirect to admin.php if not set
+                        
+    // }
+    
+    ?>
     
     <nav>
         <input type="checkbox" id="check">
@@ -37,8 +47,8 @@
         </label>
         <label class="logo">Linkorage</label>
         <ul>
-            <li><a class="active" href="https://www.facebook.com/">Home</a></li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a class="active" href="adminpanel.php">Home</a></li>
+            <li><a href="logout.php" >Logout</a></li>
             
         </ul>
     </nav>

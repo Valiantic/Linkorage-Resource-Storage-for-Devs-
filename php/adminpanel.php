@@ -24,20 +24,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f60f4be67d.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
     
-    <div class="typecontainer">
-        <span class="text myText">Welcome back Steven!</span>
-    </div>
-
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Linkorage</label>
+        <ul>
+            <li><a class="active" href="https://www.facebook.com/">Home</a></li>
+            <li><a href="logout.php">Logout</a></li>
+            
+        </ul>
+    </nav>
     
-   
-
-    <button><a href="logout.php">Logout</a></button>
-
    
 
     

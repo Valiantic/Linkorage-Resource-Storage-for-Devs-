@@ -1,8 +1,9 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body{
@@ -10,87 +11,104 @@ body{
     width: 100vw;
 }
 
-.typecontainer{
-  
-    position: sticky;
-    top: 0;
-    margin-left: 25%;
-    width: 750px;
-    position: absolute;
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
-}
-
-.typecontainer span{
+nav{
+    background: #252525;
+    height: 80px;
+    width: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-  
-
-    font-size: 3.7rem;
-    font-weight: 700;
-    position: relative;
 }
-
-.typecontainer span.myText{
+label.logo{
     color: rgb(48, 196, 255);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
     
 }
 
-.typecontainer span.headText{
-    color: rgb(48, 196, 255);
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
-button {
-    appearance: none;
-    background-color: transparent;
-    border: 0.125em solid #1A1A1A;
-    border-radius: 0.9375em;
-    box-sizing: border-box;
-    color: #3B3B3B;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    min-height: 3.75em;
-    min-width: 0;
-    outline: none;
-    padding: 1em 2.3em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    will-change: transform;
-   }
-   
-   button:disabled {
-    pointer-events: none;
-   }
-   
-   button:hover {
-    color: #fff;
-    background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-   }
-   
-   button:active {
-    box-shadow: none;
-    transform: translateY(0);
-   }
-
-   button a {
-    text-decoration: none;
+nav ul li a {
     color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-   }
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
 
-   
+a.active,a:hover{
+    background: rgb(48, 196, 255);
+    transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(48, 196, 255);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: url(kape.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(48, 196, 255);
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+section{
+   background: url(kape.jpg) no-repeat;
+   background-size: cover;
+   height: calc(100vh - 80px);
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit A.I Helpers</title>
+    <title>Linkorage</title>
     <link rel="stylesheet" href="../css/editaihelpers.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,6 +80,10 @@
             
         </ul>
     </nav>
+
+    <div class="typecontainer">
+        <span class="text myText">A.I Helpers</span>
+    </div>
 
 
             <!-- INSERT FORM -->

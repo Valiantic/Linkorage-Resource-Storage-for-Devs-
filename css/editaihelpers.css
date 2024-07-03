@@ -6,6 +6,41 @@
     box-sizing: border-box;
 }
 
+.typecontainer{
+  
+    position: sticky;
+    top: 0;
+    margin-left: 35%;
+    width: 550px;
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.typecontainer span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  
+
+    font-size: 4.7rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.typecontainer span.myText{
+    color: rgb(48, 196, 255);
+    
+}
+
+.typecontainer span.headText{
+    color: rgb(48, 196, 255);
+}
+
+
+
+
 body{
     background-color: white;
     width: 100vw;

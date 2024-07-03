@@ -49,6 +49,11 @@
     <div class="frontendtools"><a href="editfrontendtools.php">Edit Front-End Tools</a></div>
     <div class="boredgames"><a href="editboredgames.php">Edit Bored Games</a></div>
 
+    <div class="designinspirations"><a href="editdesigninspirations.php">Edit Design & Inspirations</a></div>
+    <div class="upskillcoding"><a href="editupskillcoding.php">Edit Upskill Coding</a></div>
+    <div class="visualizationchart"><a href="editvisualizationchart.php">Edit Visualization Chart</a></div>
+
+
 
 
     </div>

@@ -42,6 +42,16 @@
             
         </ul>
     </nav>
+
+    <div class="container">
+
+    <div class="aihelpers"><a href="editaihelpers.php">Edit A.I Helpers</a></div>
+    <div class="frontendtools"><a href="editfrontendtools.php">Edit Front-End Tools</a></div>
+    <div class="boredgames"><a href="editboredgames.php">Edit Bored Games</a></div>
+
+
+
+    </div>
     
    
 

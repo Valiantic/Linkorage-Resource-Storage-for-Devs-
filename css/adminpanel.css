@@ -49,6 +49,8 @@ nav ul li a {
 a.active,a:hover{
     background: rgb(48, 196, 255);
     transition: .5s;
+    border-radius: 7px;
+    padding: 2px;
 }
 .checkbtn{
   font-size: 30px;
@@ -62,6 +64,75 @@ a.active,a:hover{
 #check{
     display: none;
 }
+
+
+.aihelpers{
+    background-color: white;
+    height: 15vw;
+    width: 20vw;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.aihelpers a{
+    text-decoration: none;
+    color: #252525;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+.frontendtools{
+    background-color: white;
+    height: 15vw;
+    width: 20vw;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.frontendtools a{
+    text-decoration: none;
+    color: #252525;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  
+    font-size: 1.4rem;
+}
+.boredgames{
+    background-color: white;
+    height: 15vw;
+    width: 20vw;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.boredgames a{
+    text-decoration: none;
+    color: #252525;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  
+    font-size: 1.4rem;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+
+
+
+
 
 
 @media (max-width:952px){

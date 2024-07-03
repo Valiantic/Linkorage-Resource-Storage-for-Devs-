@@ -158,14 +158,18 @@ if ($link && $detail) {
 
    // envelope the users account in a form of a table 
   
-   echo "<table class=displaytbl>"
+   echo "<table class=displaytbl>";
    echo "<tr>
           <td class=linktitle>Link</td>
           <td class=detailtitle>Detail</td>
+
+          <td>Options</td>  
         </tr>";
-          
+          //add options
   
     while($row = mysqli_fetch_assoc($view_query)){
+
+      $link_id = $row["id"]; // delcare the id for update and delete
   
   
       // make sure that paramets inside row is same on the database column 
@@ -175,6 +179,15 @@ if ($link && $detail) {
       echo "<tr>
                <td class=px-7 py-2 text-left text-secondary><a href='$db_link'>$db_link</a></td>
                <td class=px-4 py-2 text-left text-secondary>$db_detail</td>
+               
+
+                   <td>
+          
+                  <a href='updateaihelpers.php?id=$link_id'>Update</a>
+                  &nbsp;
+
+                  <a href='Confirmdelete.php?id=$link_id'>Delete</a>
+                  </td>
             </tr>";
       
     }

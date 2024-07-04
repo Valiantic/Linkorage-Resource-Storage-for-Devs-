@@ -20,3 +20,10 @@ PAGE SCHEMA
 >updated_frontendtools.php
 >frontendtoolsconfirmdelete.php
 >frontendtoolsdelete_now.php
+
+>
+>editboredgames.php
+>updateboredgames.php
+>updated_boredgames.php
+>boredgamesconfirmdelete.php
+>boredgamesdelete_now.php

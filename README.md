@@ -14,6 +14,7 @@ PAGE SCHEMA
 >confirmdelete.php
 >delete_now.php
 
+>frontendtoolshome.php
 >editfrontendtools.php
 >updatefrontendtools.php
 >updated_frontendtools.php

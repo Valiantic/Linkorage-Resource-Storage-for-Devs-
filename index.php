@@ -97,7 +97,7 @@ const functionCards = () => {
           profileUrl = `../Linkorage/php/frontendtoolshome.php`; // Replace with your actual URL structure for the other HTML page
         }
         if (data.id === 3) {
-            profileUrl = `./php/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page
+            profileUrl = `../Linkorage/php/boredgameshome.php`; // Replace with your actual URL structure for the other HTML page
         }
         if (data.id === 4) {
             profileUrl = `./php/?id=${data.id}`; // Replace with your actual URL structure for the other HTML page

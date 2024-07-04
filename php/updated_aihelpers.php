@@ -14,3 +14,4 @@ mysqli_query($connections, "UPDATE tbl_aihelpersrecord SET link='$new_link', det
 echo "<script language='javascript'>alert('Link has been updated!')</script>"; //alert method 
 echo "<script>window.location.href='../php/editaihelpers.php';</script>";
 ?>
+

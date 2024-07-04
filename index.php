@@ -16,7 +16,7 @@
 
     
     
-        <!-- TODO: STYLE THE UPDATEAIHELPERS AND UPDATED_AIHELPERS.PHP -->
+      <!-- NOTE FOR FUTURE REFERENCE! TRY TO PUT THE RECORD ON SAME PHP FILE THEN SEPARATE TABLE DATABASE -->
 
     <!-- typing animation -->
     <div class="typecontainer">

@@ -76,7 +76,6 @@
         <label class="logo">Linkorage</label>
         <ul>
             <li><a class="active" href="adminpanel.php">Home</a></li>
-            <li><a href="search.php" >Search</a></li>
             <li><a href="logout.php" >Logout</a></li>
             
         </ul>

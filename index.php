@@ -16,7 +16,7 @@
 
     
     
-
+        <!-- TODO: STYLE THE UPDATEAIHELPERS AND UPDATED_AIHELPERS.PHP -->
 
     <!-- typing animation -->
     <div class="typecontainer">

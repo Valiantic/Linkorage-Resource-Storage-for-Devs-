@@ -183,10 +183,10 @@ if ($link && $detail) {
 
                    <td>
           
-                  <a href='updatefrontendtools.php?id=$link_id'>Update</a>
+                  <a href='updatedesign&inspirations.php?id=$link_id'>Update</a>
                   &nbsp;
 
-                  <a href='frontendtoolsconfirmdelete.php?id=$link_id'>Delete</a>
+                  <a href='design&inspirationsconfirmdelete.php?id=$link_id'>Delete</a>
                   </td>
             </tr>";
       

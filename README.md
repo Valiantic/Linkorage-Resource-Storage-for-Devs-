@@ -1,5 +1,9 @@
 Linkorage is a link inventory to store various resource website links into a safe website. This helps the user to minimize open tabs for searching important resources and maximize their time.
 
+REMINDERS FOR FUTURE REFERENCE! 
+ // COMMON ERROR HERE ALWAYS CHECK THE QUERY AND THE TABLE NAME CREATION REQUIREMENT
+// ALWAYS CHECK THE ACTION SPECIALLY IN UPDATE AND DELETE PHP!!!
+
 
 PAGE SCHEMA
 
@@ -30,3 +34,7 @@ PAGE SCHEMA
 
 >
 >editdesign&inspirations.php
+>updatedesign&inspirations.php
+>updated_design&inspirations.php
+>design&inspirationsconfirmdelete.php
+>design&inspirationsdelete_now.php

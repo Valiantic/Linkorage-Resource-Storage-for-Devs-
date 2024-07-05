@@ -1,9 +1,31 @@
+<?php
+
+$link_id = $_REQUEST["id"]; // achor tag of update 
+
+
+include("connections.php"); // add database access 
+
+$get_record = mysqli_query($connections, "SELECT * FROM tbl_designinspirations WHERE id='$link_id'"); // get id of a certain account
+
+
+
+while($row_edit = mysqli_fetch_assoc($get_record)) {  // fetch data 
+
+
+    $db_link = $row_edit["link"];  
+    $db_detail = $row_edit["detail"];
+    
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit A.I Helpers</title>
+    <title>Edit Design & Inspirations</title>
     <link rel="stylesheet" href="../css/editaihelpers.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,25 +117,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Blank field detector
   if(empty ($_POST["link"])){
-    $linkErr = "Please input a Link!";
+    $linkErr = "Please input an Updated Link!";
   } else {
     $link = $_POST["link"];
   }
 
   if(empty ($_POST["detail"])){
-    $detailErr = "Please input a Detail!";
+    $detailErr = "Please input an Updated Detail!";
   } else {
     $detail = $_POST["detail"];
   }
 
 }
 
-
-
-        // ALWAYS CHECK THE ACTION SPECIALLY IN UPDATE AND DELETE PHP!!!
 ?>
-                                                      
-    <form class="inputing" method="POST" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+
+    <form class="inputing" method="POST" action="updated_design&inspirations.php">
         
     <div class="min-h-screen bg-background flex flex-col items-center justify-center p-4">
     <div class="max-w-md w-full bg-card shadow-lg rounded-lg p-6">
@@ -122,14 +141,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <h4 class="text-1xl text-primary text-center mb-6 font-bold">By Steven Madali</h4> -->
         <div class="flex flex-col space-y-4">
 
-            <input id="linkInput" type="text" name="link" value="<?php echo $link; ?>" placeholder="Enter Link" class="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring focus:ring-primary transition duration-300" /> 
+            <input type="hidden" name="link_id" value="<?php echo $link_id; ?>">
+            <input id="linkInput" type="text" name="new_link" value="<?php echo $db_link; ?>" placeholder="Enter Updated Link" class="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring focus:ring-primary transition duration-300" /> 
             <span class="error"><?php echo $linkErr; ?></span> 
 
-            <input id="descriptionInput" type="text" name="detail" value="<?php echo $detail; ?>" placeholder="Tell me about this Link" class="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring focus:ring-primary transition duration-300" /> 
+            <input id="descriptionInput" type="text" name="new_detail" value="<?php echo $db_detail; ?>" placeholder="Tell me about this Link" class="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring focus:ring-primary transition duration-300" /> 
             <span class="error"><?php echo $detailErr; ?></span> 
 
-
-            <button id="saveButton" class="bg-primary text-primary-foreground px-4 py-3 rounded-lg hover:bg-primary/80 focus:outline-none focus:ring focus:ring-primary transition duration-300">Save Link</button>
+            <button id="saveButton" class="bg-primary text-primary-foreground px-4 py-3 rounded-lg hover:bg-primary/80 focus:outline-none focus:ring focus:ring-primary transition duration-300">Update Link</button>
             <!-- <button id="sortButton" class="bg-secondary text-secondary-foreground px-4 py-3 rounded-lg hover:bg-secondary/80 focus:outline-none focus:ring focus:ring-secondary transition duration-300">Sort by Description</button> -->
         </div>
      
@@ -139,69 +158,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
     
 
-    <?php
-
-
-// database connector
-include("connections.php");
-
-
-if ($link && $detail) {
-  //  adding a user to the database 
-   $query = mysqli_query($connections, "INSERT INTO tbl_aihelpersrecord(link,detail) VALUES('$link','$detail')");
-
-  // indicator that a new account is inserted using js 
-  echo "<script language='javascript'>alert('New Link has been inserted!')</script>";
-  echo "<script>window.location.href='editaihelpers.php';</script>";
-  }
-
-   // read the user 
-   $view_query = mysqli_query($connections, "SELECT * FROM tbl_aihelpersrecord");
-
-
-   // envelope the users account in a form of a table 
-  
-   echo "<table class=displaytbl>";
-   echo "<tr>
-          <td class=linktitle>Link</td>
-          <td class=detailtitle>Detail</td>
-
-          <td>Options</td>  
-        </tr>";
-          //add options
-  
-
-
-    // COMMON ERROR HERE ALWAYS CHECK THE QUERY AND THE TABLE NAME CREATION REQUIREMENT
-    while($row = mysqli_fetch_assoc($view_query)){
-
-      $link_id = $row["id"]; // delcare the id for update and delete
-  
-  
-      // make sure that paramets inside row is same on the database column 
-      // CHECK CAPITALIZATION!!!
-      $db_link = $row["link"];
-      $db_detail = $row["detail"];
-      echo "<tr>
-               <td class=px-7 py-2 text-left text-secondary><a href='$db_link'>$db_link</a></td>
-               <td class=px-4 py-2 text-left text-secondary>$db_detail</td>
-               
-
-                   <td>
-          
-                  <a href='updateaihelpers.php?id=$link_id'>Update</a>
-                  &nbsp;
-
-                  <a href='Confirmdelete.php?id=$link_id'>Delete</a>
-                  </td>
-            </tr>";
-      
-    }
-  
-  echo "</table>";
-
-?>
 
 
 </body>
 </html>
+

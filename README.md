@@ -32,7 +32,7 @@ PAGE SCHEMA
 >boredgamesconfirmdelete.php
 >boredgamesdelete_now.php
 
->
+>design&inspirationshome.php
 >editdesign&inspirations.php
 >updatedesign&inspirations.php
 >updated_design&inspirations.php

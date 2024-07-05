@@ -2,7 +2,8 @@ Linkorage is a link inventory to store various resource website links into a saf
 
 REMINDERS FOR FUTURE REFERENCE! 
  // COMMON ERROR HERE ALWAYS CHECK THE QUERY AND THE TABLE NAME CREATION REQUIREMENT
-// ALWAYS CHECK THE ACTION SPECIALLY IN UPDATE AND DELETE PHP!!!
+ // ALWAYS CHECK THE ACTION SPECIALLY IN UPDATE AND DELETE PHP!!!
+ // TAKE NOTE IF THE DELETE PHP DOES NOT DELETE RECORDS CHECK THE TABLE!!!
 
 
 PAGE SCHEMA
@@ -39,9 +40,16 @@ PAGE SCHEMA
 >design&inspirationsconfirmdelete.php
 >design&inspirationsdelete_now.php
 
->
+>upskillcodinghome.php
 >editupskillcoding.php
 >updateupskillcoding.php
 >updated_upskillcoding.php
 >upskillcodingconfirmdelete.php
 >upskillcodingdelete_now.php
+
+>
+>editvisualizationchart.php
+>updatevisualizationchart.php
+>updated_visualizationchart.php
+>visualizationchartconfirmdelete.php
+>visuallizationchartdelete_now.php

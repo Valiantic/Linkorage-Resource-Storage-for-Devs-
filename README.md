@@ -21,9 +21,12 @@ PAGE SCHEMA
 >frontendtoolsconfirmdelete.php
 >frontendtoolsdelete_now.php
 
->
+>boredgameshome.php
 >editboredgames.php
 >updateboredgames.php
 >updated_boredgames.php
 >boredgamesconfirmdelete.php
 >boredgamesdelete_now.php
+
+>
+>editdesign&inspirations.php

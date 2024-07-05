@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit A.I Helpers</title>
+    <title>Edit Design & Inspirations</title>
     <link rel="stylesheet" href="../css/editaihelpers.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,15 +145,15 @@ include("connections.php");
 
 if ($link && $detail) {
   //  adding a user to the database 
-   $query = mysqli_query($connections, "INSERT INTO tbl_aihelpersrecord(link,detail) VALUES('$link','$detail')");
+   $query = mysqli_query($connections, "INSERT INTO tbl_designinspirations(link,detail) VALUES('$link','$detail')");
 
   // indicator that a new account is inserted using js 
   echo "<script language='javascript'>alert('New Link has been inserted!')</script>";
-  echo "<script>window.location.href='editaihelpers.php';</script>";
+  echo "<script>window.location.href='editdesign&inspirations.php';</script>";
   }
 
    // read the user 
-   $view_query = mysqli_query($connections, "SELECT * FROM tbl_aihelpersrecord");
+   $view_query = mysqli_query($connections, "SELECT * FROM tbl_designinspirations");
 
 
    // envelope the users account in a form of a table 
@@ -167,9 +167,6 @@ if ($link && $detail) {
         </tr>";
           //add options
   
-
-
-    // COMMON ERROR HERE ALWAYS CHECK THE QUERY AND THE TABLE NAME CREATION REQUIREMENT
     while($row = mysqli_fetch_assoc($view_query)){
 
       $link_id = $row["id"]; // delcare the id for update and delete
@@ -186,10 +183,10 @@ if ($link && $detail) {
 
                    <td>
           
-                  <a href='updateaihelpers.php?id=$link_id'>Update</a>
+                  <a href='updatefrontendtools.php?id=$link_id'>Update</a>
                   &nbsp;
 
-                  <a href='Confirmdelete.php?id=$link_id'>Delete</a>
+                  <a href='frontendtoolsconfirmdelete.php?id=$link_id'>Delete</a>
                   </td>
             </tr>";
       

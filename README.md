@@ -38,3 +38,10 @@ PAGE SCHEMA
 >updated_design&inspirations.php
 >design&inspirationsconfirmdelete.php
 >design&inspirationsdelete_now.php
+
+>
+>editupskillcoding.php
+>updateupskillcoding.php
+>updated_upskillcoding.php
+>upskillcodingconfirmdelete.php
+>upskillcodingdelete_now.php

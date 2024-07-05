@@ -47,7 +47,7 @@ PAGE SCHEMA
 >upskillcodingconfirmdelete.php
 >upskillcodingdelete_now.php
 
->
+>visualizationcharthome.php
 >editvisualizationchart.php
 >updatevisualizationchart.php
 >updated_visualizationchart.php

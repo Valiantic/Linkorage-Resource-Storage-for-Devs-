@@ -117,7 +117,7 @@ const functionCards = () => {
             <h2>${data.Heading}</h2>
             <p>${data.para}</p>
 
-            <a href="${profileUrl}"><button>My Daily Life</button></a>
+            <a href="${profileUrl}"><button>Check Links!</button></a>
            
         </div>`
     })

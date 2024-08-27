@@ -476,7 +476,7 @@ include("connections.php");
       $db_link = $row["link"];
       $db_detail = $row["detail"];
       echo "<tr>
-               <td class=px-7 py-2 text-left text-secondary><a href='$db_link'>$db_link</a></td>
+               <td class=px-7 py-2 text-left text-secondary><a href='$db_link'  target='_blank'>$db_link</a></td>
                <td class=px-4 py-2 text-left text-secondary>$db_detail</td>
             </tr>";
       

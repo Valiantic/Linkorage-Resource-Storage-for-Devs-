@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <title>My Webcrumbs Plugin</title>
+    <title>Linkorage</title>
+
+       <!-- FONT AWESOME LINK -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
       
@@ -499,7 +503,10 @@
     	  <header class="text-center">
           <br>
           <br>
-    	    <h1 class="font-title text-3xl md:text-4xl">Welcome to Linkorage</h1>
+    	    <h1 class="font-title text-3xl md:text-4xl">Welcome to Linkorage
+          <i class="fa fa-link" aria-hidden="true"></i>
+
+          </h1>
     	    <p class="mt-4 text-base md:text-lg">Your one-stop hub for all software engineering resources.</p>
             <p class="mt-4 text-base md:text-lg">By Steven Madali</p>
     	  </header>
@@ -507,27 +514,43 @@
         <br>
     	  <main class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
     	    <a href="php/aihelpershome.php" class="bg-neutral-100 p-4 md:p-6 rounded-md hover:bg-primary hover:text-white transition">
-    	      <h2 class="text-lg md:text-xl">A.I Helpers</h2>
+    	      <h2 class="text-lg md:text-xl">A.I Helpers 
+              <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            </h2>
     	      <p class="mt-2 md:mt-4">Access a range of AI tools and resources to boost your productivity.</p>
     	    </a>
     	    <a href="php/frontendtoolshome.php" class="bg-neutral-100 p-4 md:p-6 rounded-md hover:bg-primary hover:text-white transition">
-    	      <h2 class="text-lg md:text-xl">Frontend Tools</h2>
+    	      <h2 class="text-lg md:text-xl">Frontend Tools
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            </h2>
     	      <p class="mt-2 md:mt-4">Discover the best tools for frontend development.</p>
     	    </a>
     	    <a href="php/boredgameshome.php" class="bg-neutral-100 p-4 md:p-6 rounded-md hover:bg-primary hover:text-white transition">
-    	      <h2 class="text-lg md:text-xl">Bored Games</h2>
+    	      <h2 class="text-lg md:text-xl">Bored Games
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+
+            </h2>
     	      <p class="mt-2 md:mt-4">Relax with a collection of entertaining games to pass the time.</p>
     	    </a>
     	    <a href="php/design&inspirationshome.php" class="bg-neutral-100 p-4 md:p-6 rounded-md hover:bg-primary hover:text-white transition">
-    	      <h2 class="text-lg md:text-xl">Design &amp; Inspirations</h2>
+    	      <h2 class="text-lg md:text-xl">Design &amp; Inspirations
+            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+
+            </h2>
     	      <p class="mt-2 md:mt-4">Get inspired by the latest design trends and resources.</p>
     	    </a>
     	    <a href="php/upskillcodinghome.php" class="bg-neutral-100 p-4 md:p-6 rounded-md hover:bg-primary hover:text-white transition">
-    	      <h2 class="text-lg md:text-xl">Upskill Coding</h2>
+    	      <h2 class="text-lg md:text-xl">Upskill Coding
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+
+            </h2>
     	      <p class="mt-2 md:mt-4">Enhance your coding skills with these resources.</p>
     	    </a>
     	    <a href="php/visualizationcharthome.php" class="bg-neutral-100 p-4 md:p-6 rounded-md hover:bg-primary hover:text-white transition">
-    	      <h2 class="text-lg md:text-xl">Visualization Chart</h2>
+    	      <h2 class="text-lg md:text-xl">Visualization Chart
+            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+
+            </h2>
     	      <p class="mt-2 md:mt-4">Explore various charts and data visualization tools.</p>
     	    </a>
     	  </main>

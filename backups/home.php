@@ -466,10 +466,6 @@
 
       .tabledisplay{
         width: 100%; 
-        max-width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       .titlelabel{
         background: #9ca3af;
@@ -490,9 +486,6 @@
 
     .header {
         font-size: 1.2rem;
-    }
-    .tabledisplay {
-      min-width: 10%;
     }
   
 }

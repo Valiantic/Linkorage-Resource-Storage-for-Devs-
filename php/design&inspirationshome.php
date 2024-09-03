@@ -521,7 +521,7 @@
     <div class="max-w-2xl mx-auto bg-neutral-50 shadow rounded-lg p-6">
         <header class="mb-6 text-center">
             <h1 class="text-3xl font-title text-primary">Design & Inspirations
-                <i class="fa fa-gamepad" aria-hidden="true"></i></h1>
+                <i class="fa fa-paint-brush" aria-hidden="true"></i></h1>
             <p class="mt-2 text-lg">Latest design trends and resources.</p>
         </header>
       <div class="mb-6 text-center">

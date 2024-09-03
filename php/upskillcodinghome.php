@@ -521,7 +521,7 @@
     <div class="max-w-2xl mx-auto bg-neutral-50 shadow rounded-lg p-6">
         <header class="mb-6 text-center">
             <h1 class="text-3xl font-title text-primary">Upskill Coding
-                <i class="fa fa-gamepad" aria-hidden="true"></i></h1>
+                <i class="fa fa-caret-up" aria-hidden="true"></i></h1>
             <p class="mt-2 text-lg">Enhance your coding skills with these resources.</p>
         </header>
       <div class="mb-6 text-center">

@@ -466,15 +466,22 @@
 
       .tabledisplay{
         width: 100%; 
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .titlelabel{
         background: #9ca3af;
         border-radius: 0;
       }
-        .table-container {
+      .table-container {
         overflow-y: scroll;
         max-height: 300px; /* Adjust the height as needed */
-    }
+      }
+      .detailtext{
+        font-size: 1.3rem;
+      }
 
 
 
@@ -483,9 +490,18 @@
     .container {
         padding: 0.5rem;
     }
-
-    .header {
-        font-size: 1.2rem;
+    .tabledisplay {
+      width: 100%; 
+      max-width: 100%;
+    }
+    .table-container {
+        overflow-y: scroll;
+        max-height: 300px; /* Adjust the height as needed */
+        width: 100%; 
+        max-width: 100%;
+      }
+    .detailtext{
+      font-size: 1.1rem;
     }
   
 }
@@ -527,7 +543,7 @@ include("connections.php");
    echo "<tr class=titlelabel>
          <td class=titledetail>Name</td>
           <td class=titledetail>Detail</td>
-           <td class=titlelink>Link</td>
+
         </tr>";
           
   
@@ -541,7 +557,7 @@ include("connections.php");
       $db_name = $row["name"];
       echo "<tr>
                 <td class=detailtext>$db_name</td>
-               <td class=detailtext>$db_detail</td>
+               <td class=detailtext>$db_detail&nbsp;</td>
                
                <td class=linktext><a href='$db_link' target='_blank'>Visit</a></td>
             </tr>";

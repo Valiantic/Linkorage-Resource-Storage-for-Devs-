@@ -480,8 +480,11 @@
         max-height: 300px; /* Adjust the height as needed */
       }
       .detailtext{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
+        .linktext:hover {
+        color: blue;
+        }
 
 
 
@@ -502,6 +505,9 @@
       }
     .detailtext{
       font-size: 1.1rem;
+    }
+    .a:hover{
+      color: #9ca3af;
     }
   
 }
